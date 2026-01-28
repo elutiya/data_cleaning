@@ -2,9 +2,10 @@
 import pandas as pd
 
 # 1 Load all datasets
-customers = pd.read_csv(r'C:\datanomics\python\Advanced python\panda\file\customer_data.csv')
-products = pd.read_csv(r'C:\datanomics\python\Advanced python\panda\file\product_data.csv')
-sale = pd.read_csv(r'C:\datanomics\python\Advanced python\panda\file\sales_data.csv')
+
+customers = pd.read_csv(r'C:\datanomics\python\project\data_cleaning\file\customer_data.csv')
+products = pd.read_csv(r'C:\datanomics\python\project\data_cleaning\file\product_data.csv')
+sale = pd.read_csv(r'C:\datanomics\python\project\data_cleaning\file\sales_data.csv')
 sales = sale.copy()
 # 2 Fix column names
 for df in [customers, products, sales]:
